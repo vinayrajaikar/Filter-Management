@@ -1,0 +1,31 @@
+{
+    "filters": [
+      {
+        "entity": "CONTACT",
+        "displayName": "Account",
+        "displayNameCode": "FILTERS.CONTACT.ACCOUNT",
+        "column": "account.id",
+        "type": "LOOKUP",
+        "picklistName": "all_accounts",
+        "customOptions": null,
+        "isMultiSelect": true,
+        "isRange": false,
+        "isHorizontal": false,
+        "subEntity": null
+      },
+      {
+        "entity": "CONTACT",
+        "displayName": "Subscribed",
+        "displayNameCode": "FILTERS.CONTACT.SUBSCRIBED",
+        "column": "is_subscribed",
+        "type": "BOOLEAN",
+        "picklistName": null,
+        "customOptions": null,
+        "isMultiSelect": false,
+        "isRange": false,
+        "isHorizontal": false,
+        "subEntity": null
+      }
+    ]
+  }
+  
