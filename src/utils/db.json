@@ -1,31 +1,59 @@
 {
-    "filters": [
-      {
-        "entity": "CONTACT",
-        "displayName": "Account",
-        "displayNameCode": "FILTERS.CONTACT.ACCOUNT",
-        "column": "account.id",
-        "type": "LOOKUP",
-        "picklistName": "all_accounts",
-        "customOptions": null,
-        "isMultiSelect": true,
-        "isRange": false,
-        "isHorizontal": false,
-        "subEntity": null
-      },
-      {
-        "entity": "CONTACT",
-        "displayName": "Subscribed",
-        "displayNameCode": "FILTERS.CONTACT.SUBSCRIBED",
-        "column": "is_subscribed",
-        "type": "BOOLEAN",
-        "picklistName": null,
-        "customOptions": null,
-        "isMultiSelect": false,
-        "isRange": false,
-        "isHorizontal": false,
-        "subEntity": null
-      }
-    ]
-  }
-  
+  "filters": [
+    {
+      "entity": "CONTACT",
+      "displayName": "Account",
+      "displayNameCode": "FILTERS.CONTACT.ACCOUNT",
+      "column": "account.id",
+      "type": "LOOKUP",
+      "picklistName": "all_accounts",
+      "customOptions": null,
+      "isMultiSelect": true,
+      "isRange": false,
+      "isHorizontal": false,
+      "subEntity": null,
+      "id": "4adf"
+    },
+    {
+      "entity": "CONTACT",
+      "displayName": "Subscribed",
+      "displayNameCode": "FILTERS.CONTACT.SUBSCRIBED",
+      "column": "is_subscribed",
+      "type": "BOOLEAN",
+      "picklistName": null,
+      "customOptions": null,
+      "isMultiSelect": false,
+      "isRange": false,
+      "isHorizontal": false,
+      "subEntity": null,
+      "id": "db10"
+    },
+    {
+      "id": "4310"
+    },
+    {
+      "id": "0e45"
+    },
+    {
+      "id": "6b46"
+    },
+    {
+      "id": "6963",
+      "entity": "ACCOUNT",
+      "displayName": "status",
+      "displayNameCode": "FILTER.CONTACT.STATUS",
+      "column": "status",
+      "picklistName": "contact_statuses",
+      "filterType": "Lookup",
+      "multiselect": "Yes",
+      "horizontalLayout": "Yes",
+      "rangeFilter": "Yes",
+      "customOptions": [
+        {
+          "label": "label",
+          "value": "value"
+        }
+      ]
+    }
+  ]
+}

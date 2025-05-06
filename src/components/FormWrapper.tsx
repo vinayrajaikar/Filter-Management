@@ -6,10 +6,11 @@ type FormInputProps = {
     placeholder?: string;
     type?: string;
     options?: string[];
-    validation?: RegisterOptions
+    validation?: RegisterOptions;
+    value?: string
 }
 
-export const FormInput = ({label,name,type="text",options = [],placeholder,validation}: FormInputProps) =>{
+export const FormInput = ({label,name,type="text",options = [],placeholder,validation,value}: FormInputProps) =>{
 
     const {
         register,
@@ -32,10 +33,10 @@ export const FormInput = ({label,name,type="text",options = [],placeholder,valid
                     type={type} 
                     placeholder={placeholder} 
                     {...register(name,validation)}
+                    value={value}
                     className=" border rounded-md p-0.5 mt-1 text-md placeholder:text-sm placeholder:px-2 "
                 />
             )}
-
 
             {errors[name] && (
                 <p className="text-red-600 text-sm">{(errors[name] as any)?.message}</p>
