@@ -52,7 +52,7 @@ const CreateFilter = () => {
                   </div>
 
                   <div className="flex items-center justify-center gap-20 mt-5 pb-10">
-                    <button type="submit" className="border border-slate-400 rounded-md p-2 w-30" onClick={()=>navigate('/')}>Cancel</button>
+                    <button className="border border-slate-400 rounded-md p-2 w-30" onClick={()=>navigate('/')}>Cancel</button>
                     <button type="submit" className="border border-slate-100 rounded-md p-2 text-white bg-blue-500 w-30 hover:bg-blue-600">Create Filter</button>
                   </div>
                   

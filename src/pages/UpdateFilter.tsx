@@ -4,7 +4,7 @@ import CustomOptionsField from "../components/CustomOptionsField";
 import { CreateFilterData } from "../utils/FilterSchema";
 import axios from "axios";
 import { useNavigate,useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 const UpdateFilter = () => {
 
@@ -65,7 +65,7 @@ const UpdateFilter = () => {
                   </div>
 
                   <div className="flex items-center justify-center gap-20 mt-5 pb-10">
-                    <button type="submit" className="border border-slate-400 rounded-md p-2 w-30" onClick={()=>navigate('/')}>Cancel</button>
+                    <button className="border border-slate-400 rounded-md p-2 w-30" onClick={()=>navigate('/')}>Cancel</button>
                     <button type="submit" className="border border-slate-100 rounded-md p-2 text-white bg-blue-500 w-30 hover:bg-blue-600">Save</button>
                   </div>
                   
